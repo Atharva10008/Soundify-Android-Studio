@@ -1,0 +1,10 @@
+#Sat May 03 01:02:11 IST 2025
+base.0=D\:\\app dev\\Soundify\\Soundify_a\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+base.1=D\:\\app dev\\Soundify\\Soundify_a\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex
+base.2=D\:\\app dev\\Soundify\\Soundify_a\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes3.dex
+path.0=classes.dex
+path.1=classes2.dex
+path.2=classes3.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex

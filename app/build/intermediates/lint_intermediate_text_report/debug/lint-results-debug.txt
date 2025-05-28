@@ -1,0 +1,484 @@
+D:\app dev\Soundify\Soundify_a\app\src\main\AndroidManifest.xml:8: Warning: WRITE_EXTERNAL_STORAGE is deprecated (and is not granted) when targeting Android 13+. If you need to write to shared storage, use the MediaStore.createWriteRequest intent. [ScopedStorage]
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ScopedStorage":
+   Scoped storage is enforced on Android 10+ (or Android 11+ if using
+   requestLegacyExternalStorage). In particular, WRITE_EXTERNAL_STORAGE will
+   no longer provide write access to all files; it will provide the equivalent
+   of READ_EXTERNAL_STORAGE instead.
+
+   As of Android 13, if you need to query or interact with MediaStore or media
+   files on the shared storage, you should be using instead one or more new
+   storage permissions:
+   * android.permission.READ_MEDIA_IMAGES
+   * android.permission.READ_MEDIA_VIDEO
+   * android.permission.READ_MEDIA_AUDIO
+
+   and then add maxSdkVersion="33" to the older permission. See the developer
+   guide for how to do this:
+   https://developer.android.com/about/versions/13/behavior-changes-13#granula
+   r-media-permissions
+
+   The MANAGE_EXTERNAL_STORAGE permission can be used to manage all files, but
+   it is rarely necessary and most apps on Google Play are not allowed to use
+   it. Most apps should instead migrate to use scoped storage. To modify or
+   delete files, apps should request write access from the user as described
+   at https://goo.gle/android-mediastore-createwriterequest.
+
+   To learn more, read these resources: Play policy:
+   https://goo.gle/policy-storage-help Allowable use cases:
+   https://goo.gle/policy-storage-usecases
+
+   https://goo.gle/android-storage-usecases
+
+D:\app dev\Soundify\Soundify_a\app\build.gradle:41: Warning: A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.16.0 [GradleDependency]
+    implementation 'androidx.core:core-ktx:1.12.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\build.gradle:42: Warning: A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.0 [GradleDependency]
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\build.gradle:43: Warning: A newer version of com.google.android.material:material than 1.11.0 is available: 1.12.0 [GradleDependency]
+    implementation 'com.google.android.material:material:1.11.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\build.gradle:44: Warning: A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1 [GradleDependency]
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\build.gradle:45: Warning: A newer version of androidx.navigation:navigation-fragment-ktx than 2.7.7 is available: 2.8.9 [GradleDependency]
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.7'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\build.gradle:46: Warning: A newer version of androidx.navigation:navigation-ui-ktx than 2.7.7 is available: 2.8.9 [GradleDependency]
+    implementation 'androidx.navigation:navigation-ui-ktx:2.7.7'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\build.gradle:47: Warning: A newer version of com.google.firebase:firebase-auth-ktx than 22.3.1 is available: 23.2.0 [GradleDependency]
+    implementation 'com.google.firebase:firebase-auth-ktx:22.3.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\build.gradle:48: Warning: A newer version of com.google.firebase:firebase-firestore-ktx than 24.10.1 is available: 25.1.4 [GradleDependency]
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.10.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\build.gradle:49: Warning: A newer version of com.google.firebase:firebase-storage-ktx than 20.3.0 is available: 21.0.1 [GradleDependency]
+    implementation 'com.google.firebase:firebase-storage-ktx:20.3.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\build.gradle:54: Warning: A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1 [GradleDependency]
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\build.gradle:55: Warning: A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1 [GradleDependency]
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_home.xml:6: Warning: Possible overdraw: Root element paints background @color/white with a theme that also paints a background (inferred theme is @style/Theme.Soundify) [Overdraw]
+    android:background="@color/white">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_launch_screen.xml:6: Warning: Possible overdraw: Root element paints background @color/background with a theme that also paints a background (inferred theme is @style/Theme.Soundify) [Overdraw]
+    android:background="@color/background">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_login.xml:6: Warning: Possible overdraw: Root element paints background @color/background with a theme that also paints a background (inferred theme is @style/Theme.Soundify) [Overdraw]
+    android:background="@color/background">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml:7: Warning: Possible overdraw: Root element paints background @color/background with a theme that also paints a background (inferred theme is @style/Theme.Soundify) [Overdraw]
+    android:background="@color/background"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_signup.xml:6: Warning: Possible overdraw: Root element paints background @color/background with a theme that also paints a background (inferred theme is @style/Theme.Soundify) [Overdraw]
+    android:background="@color/background">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_splash.xml:6: Warning: Possible overdraw: Root element paints background @color/white with a theme that also paints a background (inferred theme is @style/Theme.Soundify) [Overdraw]
+    android:background="@color/white">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_walkthrough.xml:7: Warning: Possible overdraw: Root element paints background @color/skyWhite with a theme that also paints a background (inferred theme is @style/Theme.Soundify) [Overdraw]
+    android:background="@color/skyWhite"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\nav_header_main.xml:6: Warning: Possible overdraw: Root element paints background @color/primaryBase with a theme that also paints a background (inferred theme is @style/Theme.Soundify) [Overdraw]
+    android:background="@color/primaryBase"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Overdraw":
+   If you set a background drawable on a root view, then you should use a
+   custom theme where the theme background is null. Otherwise, the theme
+   background will be painted first, only to have your custom background
+   completely cover it; this is called "overdraw".
+
+   NOTE: This detector relies on figuring out which layouts are associated
+   with which activities based on scanning the Java code, and it's currently
+   doing that using an inexact pattern matching algorithm. Therefore, it can
+   incorrectly conclude which activity the layout is associated with and then
+   wrongly complain that a background-theme is hidden.
+
+   If you want your custom background on multiple pages, then you should
+   consider making a custom theme with your custom background and just using
+   that theme instead of a root element background.
+
+   Of course it's possible that your custom drawable is translucent and you
+   want it to be mixed with the background. However, you will get better
+   performance if you pre-mix the background with your drawable and use that
+   resulting image or color as a custom theme background instead.
+
+D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\button_background_white.xml:2: Warning: The resource R.drawable.button_background_white appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+^
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml:3: Warning: The resource R.color.purple_200 appears to be unused [UnusedResources]
+    <color name="purple_200">#FFBB86FC</color>
+           ~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml:4: Warning: The resource R.color.purple_500 appears to be unused [UnusedResources]
+    <color name="purple_500">#FF6200EE</color>
+           ~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml:5: Warning: The resource R.color.purple_700 appears to be unused [UnusedResources]
+    <color name="purple_700">#FF3700B3</color>
+           ~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml:6: Warning: The resource R.color.teal_200 appears to be unused [UnusedResources]
+    <color name="teal_200">#FF03DAC5</color>
+           ~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml:7: Warning: The resource R.color.teal_700 appears to be unused [UnusedResources]
+    <color name="teal_700">#FF018786</color>
+           ~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml:17: Warning: The resource R.color.skyLight appears to be unused [UnusedResources]
+    <color name="skyLight">#E5E5E5</color>
+           ~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml:20: Warning: The resource R.color.orange appears to be unused [UnusedResources]
+    <color name="orange">#FFA500</color>
+           ~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml:21: Warning: The resource R.color.dot_inactive appears to be unused [UnusedResources]
+    <color name="dot_inactive">#D3D3D3</color>
+           ~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml:22: Warning: The resource R.color.dot_active appears to be unused [UnusedResources]
+    <color name="dot_active">@color/purple_500</color>
+           ~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml:24: Warning: The resource R.color.primary appears to be unused [UnusedResources]
+    <color name="primary">#6200EE</color>
+           ~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml:25: Warning: The resource R.color.gray appears to be unused [UnusedResources]
+    <color name="gray">#757575</color>
+           ~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_launch_screen.xml:2: Warning: The resource R.layout.fragment_launch_screen appears to be unused [UnusedResources]
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+^
+D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\ic_dot_active.xml:1: Warning: The resource R.drawable.ic_dot_active appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\ic_dot_inactive.xml:1: Warning: The resource R.drawable.ic_dot_inactive appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\ic_launcher_background.xml:2: Warning: The resource R.drawable.ic_launcher_background appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\ic_menu_camera.xml:2: Warning: The resource R.drawable.ic_menu_camera appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\ic_menu_gallery.xml:2: Warning: The resource R.drawable.ic_menu_gallery appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\ic_menu_slideshow.xml:2: Warning: The resource R.drawable.ic_menu_slideshow appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\img_onboarding_placeholder.xml:1: Warning: The resource R.drawable.img_onboarding_placeholder appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\img_splash_placeholder.xml:1: Warning: The resource R.drawable.img_splash_placeholder appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml:4: Warning: The resource R.string.app_name_caps appears to be unused [UnusedResources]
+    <string name="app_name_caps">SOUNDIFY</string>
+            ~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml:5: Warning: The resource R.string.launch_description appears to be unused [UnusedResources]
+    <string name="launch_description">Convert learning into the best moment of the day</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml:17: Warning: The resource R.string.next appears to be unused [UnusedResources]
+    <string name="next">Next</string>
+            ~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml:26: Warning: The resource R.string.have_an_account appears to be unused [UnusedResources]
+    <string name="have_an_account">Have an account?</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml:27: Warning: The resource R.string.log_in appears to be unused [UnusedResources]
+    <string name="log_in">Log in</string>
+            ~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml:30: Warning: The resource R.string.firebase_web_api_key appears to be unused [UnusedResources]
+    <string name="firebase_web_api_key">AIzaSyC737eBKj7RmRZzxrCOTm2PAL6DIZcu40E</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml:31: Warning: The resource R.string.firebase_project_id appears to be unused [UnusedResources]
+    <string name="firebase_project_id">soundify-9e177</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml:32: Warning: The resource R.string.firebase_app_id appears to be unused [UnusedResources]
+    <string name="firebase_app_id">1:643897121011:android:f2471a38e68c83aefd3f86</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml:33: Warning: The resource R.string.firebase_api_key appears to be unused [UnusedResources]
+    <string name="firebase_api_key">AIzaSyC737eBKj7RmRZzxrCOTm2PAL6DIZcu40E</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml:35: Warning: The resource R.string.firebase_storage_bucket appears to be unused [UnusedResources]
+    <string name="firebase_storage_bucket">soundify-9e177.appspot.com</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml:36: Warning: The resource R.string.firebase_sender_id appears to be unused [UnusedResources]
+    <string name="firebase_sender_id">643897121011</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\untitled_design_1.png: Warning: The resource R.drawable.untitled_design_1 appears to be unused [UnusedResources]
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+D:\app dev\Soundify\Soundify_a\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml:2: Warning: The application adaptive icon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+D:\app dev\Soundify\Soundify_a\app\src\main\res\mipmap-anydpi-v26\ic_launcher_round.xml:2: Warning: The application adaptive roundIcon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+
+   Explanation for issues of type "MonochromeLauncherIcon":
+   If android:roundIcon and android:icon are both in your manifest, you must
+   either remove the reference to android:roundIcon if it is not needed; or,
+   supply the monochrome icon in the drawable defined by the android:roundIcon
+   and android:icon attribute.
+
+   For example, if android:roundIcon and android:icon are both in the
+   manifest, a launcher might choose to use android:roundIcon over
+   android:icon to display the adaptive app icon. Therefore, your themed
+   application iconwill not show if your monochrome attribute is not also
+   specified in android:roundIcon.
+
+D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\soundify_logo.png: Warning: Found bitmap drawable res/drawable/soundify_logo.png in densityless folder [IconLocation]
+D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\untitled_design_1.png: Warning: Found bitmap drawable res/drawable/untitled_design_1.png in densityless folder [IconLocation]
+D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\views_images_ratio.png: Warning: Found bitmap drawable res/drawable/views_images_ratio.png in densityless folder [IconLocation]
+
+   Explanation for issues of type "IconLocation":
+   The res/drawable folder is intended for density-independent graphics such
+   as shapes defined in XML. For bitmaps, move it to drawable-mdpi and
+   consider providing higher and lower resolution versions in drawable-ldpi,
+   drawable-hdpi and drawable-xhdpi. If the icon really is density independent
+   (for example a solid color) you can place it in drawable-nodpi.
+
+   https://developer.android.com/guide/practices/screens_support.html
+
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_login.xml:21: Warning: Missing autofillHints attribute [Autofill]
+    <EditText
+     ~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_login.xml:37: Warning: Missing autofillHints attribute [Autofill]
+    <EditText
+     ~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_signup.xml:21: Warning: Missing autofillHints attribute [Autofill]
+    <EditText
+     ~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_signup.xml:37: Warning: Missing autofillHints attribute [Autofill]
+    <EditText
+     ~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_signup.xml:53: Warning: Missing autofillHints attribute [Autofill]
+    <EditText
+     ~~~~~~~~
+
+   Explanation for issues of type "Autofill":
+   Specify an autofillHints attribute when targeting SDK version 26 or higher
+   or explicitly specify that the view is not important for autofill. Your app
+   can help an autofill service classify the data correctly by providing the
+   meaning of each view that could be autofillable, such as views representing
+   usernames, passwords, credit card fields, email addresses, etc.
+
+   The hints can have any value, but it is recommended to use predefined
+   values like 'username' for a username or 'creditCardNumber' for a credit
+   card number. For a list of all predefined autofill hint constants, see the
+   AUTOFILL_HINT_ constants in the View reference at
+   https://developer.android.com/reference/android/view/View.html.
+
+   You can mark a view unimportant for autofill by specifying an
+   importantForAutofill attribute on that view or a parent view. See
+   https://developer.android.com/reference/android/view/View.html#setImportant
+   ForAutofill(int).
+
+   https://developer.android.com/guide/topics/text/autofill.html
+
+D:\app dev\Soundify\Soundify_a\app\src\main\java\com\example\soundify\ui\main\MainFragment.kt:173: Warning: Custom view `ImageView` has setOnTouchListener called on it but does not override performClick [ClickableViewAccessibility]
+        imageView.setOnTouchListener { _, event ->
+        ^
+D:\app dev\Soundify\Soundify_a\app\src\main\java\com\example\soundify\ui\main\MainFragment.kt:173: Warning: onTouch lambda should call View#performClick when a click is detected [ClickableViewAccessibility]
+        imageView.setOnTouchListener { _, event ->
+                                     ^
+
+   Explanation for issues of type "ClickableViewAccessibility":
+   If a View that overrides onTouchEvent or uses an OnTouchListener does not
+   also implement performClick and call it when clicks are detected, the View
+   may not handle accessibility actions properly. Logic handling the click
+   actions should ideally be placed in View#performClick as some accessibility
+   services invoke performClick when a click action should occur.
+
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_launch_screen.xml:38: Warning: Missing contentDescription attribute on image [ContentDescription]
+    <ImageView
+     ~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml:17: Warning: Missing contentDescription attribute on image [ContentDescription]
+    <ImageView
+     ~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_my_application.xml:80: Warning: Missing contentDescription attribute on image [ContentDescription]
+                        <ImageView
+                         ~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_splash.xml:8: Warning: Missing contentDescription attribute on image [ContentDescription]
+    <ImageView
+     ~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\item_carousel.xml:6: Warning: Missing contentDescription attribute on image [ContentDescription]
+    <ImageView
+     ~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\item_walkthrough.xml:8: Warning: Missing contentDescription attribute on image [ContentDescription]
+    <ImageView
+     ~~~~~~~~~
+
+   Explanation for issues of type "ContentDescription":
+   Non-textual widgets like ImageViews and ImageButtons should use the
+   contentDescription attribute to specify a textual description of the widget
+   such that screen readers and other accessibility tools can adequately
+   describe the user interface.
+
+   Note that elements in application screens that are purely decorative and do
+   not provide any content or enable a user action should not have
+   accessibility content descriptions. In this case, set their descriptions to
+   @null. If your app's minSdkVersion is 16 or higher, you can instead set
+   these graphical elements' android:importantForAccessibility attributes to
+   no.
+
+   Note that for text fields, you should not set both the hint and the
+   contentDescription attributes since the hint will never be shown. Just set
+   the hint.
+
+   https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases
+
+D:\app dev\Soundify\Soundify_a\app\src\main\java\com\example\soundify\ui\myapplication\GalleryFragment.kt:20: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        textView.text = "This is gallery fragment"
+                         ~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\java\com\example\soundify\ui\main\MainFragment.kt:281: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                        resultText.text = "Error: $responseCode"
+                                          ~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\java\com\example\soundify\ui\main\MainFragment.kt:281: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                        resultText.text = "Error: $responseCode"
+                                           ~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\java\com\example\soundify\ui\main\MainFragment.kt:287: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                    resultText.text = "Error fetching information."
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\java\com\example\soundify\ui\myapplication\SlideshowFragment.kt:20: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        textView.text = "This is slideshow fragment"
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+D:\app dev\Soundify\Soundify_a\app\src\main\res\menu\activity_main_drawer.xml:10: Warning: Hardcoded string "Object Detection", should use @string resource [HardcodedText]
+            android:title="Object Detection" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\menu\activity_main_drawer.xml:13: Warning: Hardcoded string "Account", should use @string resource [HardcodedText]
+    <item android:title="Account">
+          ~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\menu\activity_main_drawer.xml:18: Warning: Hardcoded string "Logout", should use @string resource [HardcodedText]
+                android:title="Logout" />
+                ~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_home.xml:27: Warning: Hardcoded string "Soundify Logo", should use @string resource [HardcodedText]
+            android:contentDescription="Soundify Logo" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_home.xml:36: Warning: Hardcoded string "Object Detection", should use @string resource [HardcodedText]
+        android:text="Object Detection"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_home.xml:49: Warning: Hardcoded string "Did you know that images can speak?", should use @string resource [HardcodedText]
+        android:text="Did you know that images can speak?"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml:31: Warning: Hardcoded string "Classified as:", should use @string resource [HardcodedText]
+        android:text="Classified as:"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml:63: Warning: Hardcoded string "Play", should use @string resource [HardcodedText]
+        android:text="Play" />
+        ~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml:73: Warning: Hardcoded string "Pause", should use @string resource [HardcodedText]
+        android:text="Pause" />
+        ~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml:81: Warning: Hardcoded string "Take Picture", should use @string resource [HardcodedText]
+        android:text="Take Picture"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml:92: Warning: Hardcoded string "Launch Gallery", should use @string resource [HardcodedText]
+        android:text="Launch Gallery"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml:104: Warning: Hardcoded string "Logout", should use @string resource [HardcodedText]
+        android:text="Logout"
+        ~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_my_application.xml:35: Warning: Hardcoded string "Home", should use @string resource [HardcodedText]
+                        android:text="Home"
+                        ~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_my_application.xml:45: Warning: Hardcoded string "Logout", should use @string resource [HardcodedText]
+                        android:contentDescription="Logout"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_my_application.xml:93: Warning: Hardcoded string "User Name", should use @string resource [HardcodedText]
+                            android:text="User Name"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_my_application.xml:104: Warning: Hardcoded string "user@example.com", should use @string resource [HardcodedText]
+                            android:text="user@example.com"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_my_application.xml:112: Warning: Hardcoded string "Object Detection", should use @string resource [HardcodedText]
+                            android:text="Object Detection"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\nav_header_main.xml:16: Warning: Hardcoded string "Profile", should use @string resource [HardcodedText]
+        android:contentDescription="Profile"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\nav_header_main.xml:24: Warning: Hardcoded string "Android Studio", should use @string resource [HardcodedText]
+        android:text="Android Studio"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\nav_header_main.xml:34: Warning: Hardcoded string "android.studio@android.com", should use @string resource [HardcodedText]
+        android:text="android.studio@android.com"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml:22: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="20dp" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_marginLeft="20dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml:41: Warning: Consider replacing android:layout_marginLeft with android:layout_marginStart="35dp" to better support right-to-left layouts [RtlHardcoded]
+        android:layout_marginLeft="35dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "RtlHardcoded":
+   Using Gravity#LEFT and Gravity#RIGHT can lead to problems when a layout is
+   rendered in locales where text flows from right to left. Use Gravity#START
+   and Gravity#END instead. Similarly, in XML gravity and layout_gravity
+   attributes, use start rather than left.
+
+   For XML attributes such as paddingLeft and layout_marginLeft, use
+   paddingStart and layout_marginStart. NOTE: If your minSdkVersion is less
+   than 17, you should add both the older left/right attributes as well as the
+   new start/end attributes. On older platforms, where RTL is not supported
+   and the start/end attributes are unknown and therefore ignored, you need
+   the older left/right attributes. There is a separate lint check which
+   catches that type of error.
+
+   (Note: For Gravity#LEFT and Gravity#START, you can use these constants even
+   when targeting older platforms, because the start bitmask is a superset of
+   the left bitmask. Therefore, you can use gravity="start" rather than
+   gravity="left|start".)
+
+0 errors, 98 warnings

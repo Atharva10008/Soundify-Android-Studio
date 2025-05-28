@@ -1,0 +1,1596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.2.2">
+
+    <issue
+        id="ScopedStorage"
+        severity="Warning"
+        message="WRITE_EXTERNAL_STORAGE is deprecated (and is not granted) when targeting Android 13+. If you need to write to shared storage, use the `MediaStore.createWriteRequest` intent."
+        category="Correctness"
+        priority="8"
+        summary="Affected by scoped storage"
+        explanation="Scoped storage is enforced on Android 10+ (or Android 11+ if using `requestLegacyExternalStorage`). In particular, `WRITE_EXTERNAL_STORAGE` will no longer provide write access to all files; it will provide the equivalent of `READ_EXTERNAL_STORAGE` instead.&#xA;&#xA;As of Android 13, if you need to query or interact with MediaStore or media files on the shared storage, you should be using instead one or more new storage permissions:&#xA;* `android.permission.READ_MEDIA_IMAGES`&#xA;* `android.permission.READ_MEDIA_VIDEO`&#xA;* `android.permission.READ_MEDIA_AUDIO`&#xA;&#xA;and then add `maxSdkVersion=&quot;33&quot;` to the older permission. See the developer guide for how to do this: https://developer.android.com/about/versions/13/behavior-changes-13#granular-media-permissions&#xA;&#xA;The `MANAGE_EXTERNAL_STORAGE` permission can be used to manage all files, but it is rarely necessary and most apps on Google Play are not allowed to use it. Most apps should instead migrate to use scoped storage. To modify or delete files, apps should request write access from the user as described at https://goo.gle/android-mediastore-createwriterequest.&#xA;&#xA;To learn more, read these resources: Play policy: https://goo.gle/policy-storage-help Allowable use cases: https://goo.gle/policy-storage-usecases"
+        url="https://goo.gle/android-storage-usecases"
+        urls="https://goo.gle/android-storage-usecases"
+        errorLine1="    &lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot; />"
+        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\AndroidManifest.xml"
+            line="8"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.16.0"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation &apos;androidx.core:core-ktx:1.12.0&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\build.gradle"
+            line="41"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.0"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation &apos;androidx.appcompat:appcompat:1.6.1&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\build.gradle"
+            line="42"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of com.google.android.material:material than 1.11.0 is available: 1.12.0"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation &apos;com.google.android.material:material:1.11.0&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\build.gradle"
+            line="43"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation &apos;androidx.constraintlayout:constraintlayout:2.1.4&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\build.gradle"
+            line="44"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.navigation:navigation-fragment-ktx than 2.7.7 is available: 2.8.9"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation &apos;androidx.navigation:navigation-fragment-ktx:2.7.7&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\build.gradle"
+            line="45"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.navigation:navigation-ui-ktx than 2.7.7 is available: 2.8.9"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation &apos;androidx.navigation:navigation-ui-ktx:2.7.7&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\build.gradle"
+            line="46"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of com.google.firebase:firebase-auth-ktx than 22.3.1 is available: 23.2.0"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation &apos;com.google.firebase:firebase-auth-ktx:22.3.1&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\build.gradle"
+            line="47"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of com.google.firebase:firebase-firestore-ktx than 24.10.1 is available: 25.1.4"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation &apos;com.google.firebase:firebase-firestore-ktx:24.10.1&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\build.gradle"
+            line="48"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of com.google.firebase:firebase-storage-ktx than 20.3.0 is available: 21.0.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation &apos;com.google.firebase:firebase-storage-ktx:20.3.0&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\build.gradle"
+            line="49"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    androidTestImplementation &apos;androidx.test.ext:junit:1.1.5&apos;"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\build.gradle"
+            line="54"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    androidTestImplementation &apos;androidx.test.espresso:espresso-core:3.5.1&apos;"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\build.gradle"
+            line="55"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.Soundify`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="    android:background=&quot;@color/white&quot;>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_home.xml"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.Soundify`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="    android:background=&quot;@color/background&quot;>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_launch_screen.xml"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.Soundify`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="    android:background=&quot;@color/background&quot;>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_login.xml"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.Soundify`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="    android:background=&quot;@color/background&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml"
+            line="7"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.Soundify`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="    android:background=&quot;@color/background&quot;>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_signup.xml"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.Soundify`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="    android:background=&quot;@color/white&quot;>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_splash.xml"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `@color/skyWhite` with a theme that also paints a background (inferred theme is `@style/Theme.Soundify`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="    android:background=&quot;@color/skyWhite&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_walkthrough.xml"
+            line="7"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `@color/primaryBase` with a theme that also paints a background (inferred theme is `@style/Theme.Soundify`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="    android:background=&quot;@color/primaryBase&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\nav_header_main.xml"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.button_background_white` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\button_background_white.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.color.purple_200` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;color name=&quot;purple_200&quot;>#FFBB86FC&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml"
+            line="3"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.color.purple_500` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;color name=&quot;purple_500&quot;>#FF6200EE&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml"
+            line="4"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.color.purple_700` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;color name=&quot;purple_700&quot;>#FF3700B3&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml"
+            line="5"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.color.teal_200` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;color name=&quot;teal_200&quot;>#FF03DAC5&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml"
+            line="6"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.color.teal_700` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;color name=&quot;teal_700&quot;>#FF018786&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml"
+            line="7"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.color.skyLight` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;color name=&quot;skyLight&quot;>#E5E5E5&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml"
+            line="17"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.color.orange` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;color name=&quot;orange&quot;>#FFA500&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml"
+            line="20"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.color.dot_inactive` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;color name=&quot;dot_inactive&quot;>#D3D3D3&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml"
+            line="21"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.color.dot_active` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;color name=&quot;dot_active&quot;>@color/purple_500&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml"
+            line="22"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.color.primary` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;color name=&quot;primary&quot;>#6200EE&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml"
+            line="24"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.color.gray` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;color name=&quot;gray&quot;>#757575&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\colors.xml"
+            line="25"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.layout.fragment_launch_screen` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="&lt;androidx.constraintlayout.widget.ConstraintLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_launch_screen.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.ic_dot_active` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\ic_dot_active.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.ic_dot_inactive` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\ic_dot_inactive.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.ic_launcher_background` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\ic_launcher_background.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.ic_menu_camera` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\ic_menu_camera.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.ic_menu_gallery` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\ic_menu_gallery.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.ic_menu_slideshow` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\ic_menu_slideshow.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_onboarding_placeholder` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\img_onboarding_placeholder.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_splash_placeholder` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\img_splash_placeholder.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.app_name_caps` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;string name=&quot;app_name_caps&quot;>SOUNDIFY&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml"
+            line="4"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.launch_description` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;string name=&quot;launch_description&quot;>Convert learning into the best moment of the day&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml"
+            line="5"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.next` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;string name=&quot;next&quot;>Next&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml"
+            line="17"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.have_an_account` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;string name=&quot;have_an_account&quot;>Have an account?&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml"
+            line="26"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.log_in` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;string name=&quot;log_in&quot;>Log in&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml"
+            line="27"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.firebase_web_api_key` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;string name=&quot;firebase_web_api_key&quot;>AIzaSyC737eBKj7RmRZzxrCOTm2PAL6DIZcu40E&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml"
+            line="30"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.firebase_project_id` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;string name=&quot;firebase_project_id&quot;>soundify-9e177&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml"
+            line="31"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.firebase_app_id` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;string name=&quot;firebase_app_id&quot;>1:643897121011:android:f2471a38e68c83aefd3f86&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml"
+            line="32"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.firebase_api_key` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;string name=&quot;firebase_api_key&quot;>AIzaSyC737eBKj7RmRZzxrCOTm2PAL6DIZcu40E&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml"
+            line="33"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.firebase_storage_bucket` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;string name=&quot;firebase_storage_bucket&quot;>soundify-9e177.appspot.com&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml"
+            line="35"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.firebase_sender_id` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;string name=&quot;firebase_sender_id&quot;>643897121011&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\values\strings.xml"
+            line="36"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.untitled_design_1` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\untitled_design_1.png"/>
+    </issue>
+
+    <issue
+        id="MonochromeLauncherIcon"
+        severity="Warning"
+        message="The application adaptive icon is missing a monochrome tag"
+        category="Usability:Icons"
+        priority="6"
+        summary="Monochrome icon is not defined"
+        explanation="If `android:roundIcon` and `android:icon` are both in your manifest, you must either remove the reference to `android:roundIcon` if it is not needed; or, supply the monochrome icon in the drawable defined by the `android:roundIcon` and `android:icon` attribute.&#xA;&#xA;For example, if `android:roundIcon` and `android:icon` are both in the manifest, a launcher might choose to use `android:roundIcon` over `android:icon` to display the adaptive app icon. Therefore, your themed application iconwill not show if your monochrome attribute is not also specified in `android:roundIcon`."
+        errorLine1="&lt;adaptive-icon xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="MonochromeLauncherIcon"
+        severity="Warning"
+        message="The application adaptive roundIcon is missing a monochrome tag"
+        category="Usability:Icons"
+        priority="6"
+        summary="Monochrome icon is not defined"
+        explanation="If `android:roundIcon` and `android:icon` are both in your manifest, you must either remove the reference to `android:roundIcon` if it is not needed; or, supply the monochrome icon in the drawable defined by the `android:roundIcon` and `android:icon` attribute.&#xA;&#xA;For example, if `android:roundIcon` and `android:icon` are both in the manifest, a launcher might choose to use `android:roundIcon` over `android:icon` to display the adaptive app icon. Therefore, your themed application iconwill not show if your monochrome attribute is not also specified in `android:roundIcon`."
+        errorLine1="&lt;adaptive-icon xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\mipmap-anydpi-v26\ic_launcher_round.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/soundify_logo.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\soundify_logo.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/untitled_design_1.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\untitled_design_1.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/views_images_ratio.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\drawable\views_images_ratio.png"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        severity="Warning"
+        message="Missing `autofillHints` attribute"
+        category="Usability"
+        priority="3"
+        summary="Use Autofill"
+        explanation="Specify an `autofillHints` attribute when targeting SDK version 26 or higher or explicitly specify that the view is not important for autofill. Your app can help an autofill service classify the data correctly by providing the meaning of each view that could be autofillable, such as views representing usernames, passwords, credit card fields, email addresses, etc.&#xA;&#xA;The hints can have any value, but it is recommended to use predefined values like &apos;username&apos; for a username or &apos;creditCardNumber&apos; for a credit card number. For a list of all predefined autofill hint constants, see the `AUTOFILL_HINT_` constants in the `View` reference at https://developer.android.com/reference/android/view/View.html.&#xA;&#xA;You can mark a view unimportant for autofill by specifying an `importantForAutofill` attribute on that view or a parent view. See https://developer.android.com/reference/android/view/View.html#setImportantForAutofill(int)."
+        url="https://developer.android.com/guide/topics/text/autofill.html"
+        urls="https://developer.android.com/guide/topics/text/autofill.html"
+        errorLine1="    &lt;EditText"
+        errorLine2="     ~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_login.xml"
+            line="21"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        severity="Warning"
+        message="Missing `autofillHints` attribute"
+        category="Usability"
+        priority="3"
+        summary="Use Autofill"
+        explanation="Specify an `autofillHints` attribute when targeting SDK version 26 or higher or explicitly specify that the view is not important for autofill. Your app can help an autofill service classify the data correctly by providing the meaning of each view that could be autofillable, such as views representing usernames, passwords, credit card fields, email addresses, etc.&#xA;&#xA;The hints can have any value, but it is recommended to use predefined values like &apos;username&apos; for a username or &apos;creditCardNumber&apos; for a credit card number. For a list of all predefined autofill hint constants, see the `AUTOFILL_HINT_` constants in the `View` reference at https://developer.android.com/reference/android/view/View.html.&#xA;&#xA;You can mark a view unimportant for autofill by specifying an `importantForAutofill` attribute on that view or a parent view. See https://developer.android.com/reference/android/view/View.html#setImportantForAutofill(int)."
+        url="https://developer.android.com/guide/topics/text/autofill.html"
+        urls="https://developer.android.com/guide/topics/text/autofill.html"
+        errorLine1="    &lt;EditText"
+        errorLine2="     ~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_login.xml"
+            line="37"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        severity="Warning"
+        message="Missing `autofillHints` attribute"
+        category="Usability"
+        priority="3"
+        summary="Use Autofill"
+        explanation="Specify an `autofillHints` attribute when targeting SDK version 26 or higher or explicitly specify that the view is not important for autofill. Your app can help an autofill service classify the data correctly by providing the meaning of each view that could be autofillable, such as views representing usernames, passwords, credit card fields, email addresses, etc.&#xA;&#xA;The hints can have any value, but it is recommended to use predefined values like &apos;username&apos; for a username or &apos;creditCardNumber&apos; for a credit card number. For a list of all predefined autofill hint constants, see the `AUTOFILL_HINT_` constants in the `View` reference at https://developer.android.com/reference/android/view/View.html.&#xA;&#xA;You can mark a view unimportant for autofill by specifying an `importantForAutofill` attribute on that view or a parent view. See https://developer.android.com/reference/android/view/View.html#setImportantForAutofill(int)."
+        url="https://developer.android.com/guide/topics/text/autofill.html"
+        urls="https://developer.android.com/guide/topics/text/autofill.html"
+        errorLine1="    &lt;EditText"
+        errorLine2="     ~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_signup.xml"
+            line="21"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        severity="Warning"
+        message="Missing `autofillHints` attribute"
+        category="Usability"
+        priority="3"
+        summary="Use Autofill"
+        explanation="Specify an `autofillHints` attribute when targeting SDK version 26 or higher or explicitly specify that the view is not important for autofill. Your app can help an autofill service classify the data correctly by providing the meaning of each view that could be autofillable, such as views representing usernames, passwords, credit card fields, email addresses, etc.&#xA;&#xA;The hints can have any value, but it is recommended to use predefined values like &apos;username&apos; for a username or &apos;creditCardNumber&apos; for a credit card number. For a list of all predefined autofill hint constants, see the `AUTOFILL_HINT_` constants in the `View` reference at https://developer.android.com/reference/android/view/View.html.&#xA;&#xA;You can mark a view unimportant for autofill by specifying an `importantForAutofill` attribute on that view or a parent view. See https://developer.android.com/reference/android/view/View.html#setImportantForAutofill(int)."
+        url="https://developer.android.com/guide/topics/text/autofill.html"
+        urls="https://developer.android.com/guide/topics/text/autofill.html"
+        errorLine1="    &lt;EditText"
+        errorLine2="     ~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_signup.xml"
+            line="37"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        severity="Warning"
+        message="Missing `autofillHints` attribute"
+        category="Usability"
+        priority="3"
+        summary="Use Autofill"
+        explanation="Specify an `autofillHints` attribute when targeting SDK version 26 or higher or explicitly specify that the view is not important for autofill. Your app can help an autofill service classify the data correctly by providing the meaning of each view that could be autofillable, such as views representing usernames, passwords, credit card fields, email addresses, etc.&#xA;&#xA;The hints can have any value, but it is recommended to use predefined values like &apos;username&apos; for a username or &apos;creditCardNumber&apos; for a credit card number. For a list of all predefined autofill hint constants, see the `AUTOFILL_HINT_` constants in the `View` reference at https://developer.android.com/reference/android/view/View.html.&#xA;&#xA;You can mark a view unimportant for autofill by specifying an `importantForAutofill` attribute on that view or a parent view. See https://developer.android.com/reference/android/view/View.html#setImportantForAutofill(int)."
+        url="https://developer.android.com/guide/topics/text/autofill.html"
+        urls="https://developer.android.com/guide/topics/text/autofill.html"
+        errorLine1="    &lt;EditText"
+        errorLine2="     ~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_signup.xml"
+            line="53"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        severity="Warning"
+        message="Custom view ``ImageView`` has `setOnTouchListener` called on it but does not override `performClick`"
+        category="Accessibility"
+        priority="6"
+        summary="Accessibility in Custom Views"
+        explanation="If a `View` that overrides `onTouchEvent` or uses an `OnTouchListener` does not also implement `performClick` and call it when clicks are detected, the `View` may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in `View#performClick` as some accessibility services invoke `performClick` when a click action should occur."
+        errorLine1="        imageView.setOnTouchListener { _, event ->"
+        errorLine2="        ^">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\java\com\example\soundify\ui\main\MainFragment.kt"
+            line="173"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        severity="Warning"
+        message="`onTouch` lambda should call `View#performClick` when a click is detected"
+        category="Accessibility"
+        priority="6"
+        summary="Accessibility in Custom Views"
+        explanation="If a `View` that overrides `onTouchEvent` or uses an `OnTouchListener` does not also implement `performClick` and call it when clicks are detected, the `View` may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in `View#performClick` as some accessibility services invoke `performClick` when a click action should occur."
+        errorLine1="        imageView.setOnTouchListener { _, event ->"
+        errorLine2="                                     ^">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\java\com\example\soundify\ui\main\MainFragment.kt"
+            line="173"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, set their descriptions to `@null`. If your app&apos;s minSdkVersion is 16 or higher, you can instead set these graphical elements&apos; `android:importantForAccessibility` attributes to `no`.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`."
+        url="https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases"
+        urls="https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases"
+        errorLine1="    &lt;ImageView"
+        errorLine2="     ~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_launch_screen.xml"
+            line="38"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, set their descriptions to `@null`. If your app&apos;s minSdkVersion is 16 or higher, you can instead set these graphical elements&apos; `android:importantForAccessibility` attributes to `no`.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`."
+        url="https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases"
+        urls="https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases"
+        errorLine1="    &lt;ImageView"
+        errorLine2="     ~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml"
+            line="17"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, set their descriptions to `@null`. If your app&apos;s minSdkVersion is 16 or higher, you can instead set these graphical elements&apos; `android:importantForAccessibility` attributes to `no`.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`."
+        url="https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases"
+        urls="https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases"
+        errorLine1="                        &lt;ImageView"
+        errorLine2="                         ~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_my_application.xml"
+            line="80"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, set their descriptions to `@null`. If your app&apos;s minSdkVersion is 16 or higher, you can instead set these graphical elements&apos; `android:importantForAccessibility` attributes to `no`.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`."
+        url="https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases"
+        urls="https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases"
+        errorLine1="    &lt;ImageView"
+        errorLine2="     ~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_splash.xml"
+            line="8"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, set their descriptions to `@null`. If your app&apos;s minSdkVersion is 16 or higher, you can instead set these graphical elements&apos; `android:importantForAccessibility` attributes to `no`.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`."
+        url="https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases"
+        urls="https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases"
+        errorLine1="    &lt;ImageView"
+        errorLine2="     ~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\item_carousel.xml"
+            line="6"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, set their descriptions to `@null`. If your app&apos;s minSdkVersion is 16 or higher, you can instead set these graphical elements&apos; `android:importantForAccessibility` attributes to `no`.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`."
+        url="https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases"
+        urls="https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases"
+        errorLine1="    &lt;ImageView"
+        errorLine2="     ~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\item_walkthrough.xml"
+            line="8"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="        textView.text = &quot;This is gallery fragment&quot;"
+        errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\java\com\example\soundify\ui\myapplication\GalleryFragment.kt"
+            line="20"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="                        resultText.text = &quot;Error: $responseCode&quot;"
+        errorLine2="                                          ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\java\com\example\soundify\ui\main\MainFragment.kt"
+            line="281"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="                        resultText.text = &quot;Error: $responseCode&quot;"
+        errorLine2="                                           ~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\java\com\example\soundify\ui\main\MainFragment.kt"
+            line="281"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="                    resultText.text = &quot;Error fetching information.&quot;"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\java\com\example\soundify\ui\main\MainFragment.kt"
+            line="287"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="        textView.text = &quot;This is slideshow fragment&quot;"
+        errorLine2="                         ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\java\com\example\soundify\ui\myapplication\SlideshowFragment.kt"
+            line="20"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Object Detection&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:title=&quot;Object Detection&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\menu\activity_main_drawer.xml"
+            line="10"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Account&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="    &lt;item android:title=&quot;Account&quot;>"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\menu\activity_main_drawer.xml"
+            line="13"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Logout&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:title=&quot;Logout&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\menu\activity_main_drawer.xml"
+            line="18"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Soundify Logo&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;Soundify Logo&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_home.xml"
+            line="27"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Object Detection&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;Object Detection&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_home.xml"
+            line="36"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Did you know that images can speak?&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;Did you know that images can speak?&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_home.xml"
+            line="49"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Classified as:&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;Classified as:&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml"
+            line="31"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Play&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;Play&quot; />"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml"
+            line="63"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Pause&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;Pause&quot; />"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml"
+            line="73"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Take Picture&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;Take Picture&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml"
+            line="81"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Launch Gallery&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;Launch Gallery&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml"
+            line="92"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Logout&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;Logout&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml"
+            line="104"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Home&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                        android:text=&quot;Home&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_my_application.xml"
+            line="35"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Logout&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                        android:contentDescription=&quot;Logout&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_my_application.xml"
+            line="45"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;User Name&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                            android:text=&quot;User Name&quot;"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_my_application.xml"
+            line="93"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;user@example.com&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                            android:text=&quot;user@example.com&quot;"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_my_application.xml"
+            line="104"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Object Detection&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                            android:text=&quot;Object Detection&quot;"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_my_application.xml"
+            line="112"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Profile&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:contentDescription=&quot;Profile&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\nav_header_main.xml"
+            line="16"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Android Studio&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;Android Studio&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\nav_header_main.xml"
+            line="24"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;android.studio@android.com&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;android.studio@android.com&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\nav_header_main.xml"
+            line="34"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;20dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/end attributes. On older platforms, where RTL is not supported and the start/end attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="        android:layout_marginLeft=&quot;20dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml"
+            line="22"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider replacing `android:layout_marginLeft` with `android:layout_marginStart=&quot;35dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/end attributes. On older platforms, where RTL is not supported and the start/end attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="        android:layout_marginLeft=&quot;35dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\app dev\Soundify\Soundify_a\app\src\main\res\layout\fragment_main.xml"
+            line="41"
+            column="9"/>
+    </issue>
+
+</issues>

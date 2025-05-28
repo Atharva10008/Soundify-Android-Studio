@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Soundify</string>
+    <string name="app_name_caps">SOUNDIFY</string>
+    <string name="launch_description">Convert learning into the best moment of the day</string>
+    <string name="get_started">Get started</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="already_have_account">Already have an account?</string>
+    
+    <!-- Walkthrough strings -->
+    <string name="next">Next</string>
+    <string name="slide1_title">Welcome to Soundify</string>
+    <string name="slide1_description">Discover and enjoy your favorite music with our amazing features</string>
+    <string name="slide2_title">Personalized Playlists</string>
+    <string name="slide2_description">Create and customize your own playlists based on your mood</string>
+    <string name="slide3_title">Offline Listening</string>
+    <string name="slide3_description">Download your favorite songs and listen to them offline</string>
+
+    <string name="walkthrough_title">Create brilliant learning pathways</string>
+    <string name="have_an_account">Have an account?</string>
+    <string name="log_in">Log in</string>
+
+    <!-- Firebase Configuration -->
+    <string name="firebase_web_api_key">AIzaSyC737eBKj7RmRZzxrCOTm2PAL6DIZcu40E</string>
+    <string name="firebase_project_id">soundify-9e177</string>
+    <string name="firebase_app_id">1:643897121011:android:f2471a38e68c83aefd3f86</string>
+    <string name="firebase_api_key">AIzaSyC737eBKj7RmRZzxrCOTm2PAL6DIZcu40E</string>
+    <string name="firebase_database_url">https://soundify-9e177.firebaseio.com</string>
+    <string name="firebase_storage_bucket">soundify-9e177.appspot.com</string>
+    <string name="firebase_sender_id">643897121011</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources> 

@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.2.2" type="incidents">
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Soundify Logo&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_home.xml"
+            line="27"
+            column="13"
+            startOffset="1106"
+            endLine="27"
+            endColumn="55"
+            endOffset="1148"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Object Detection&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_home.xml"
+            line="36"
+            column="9"
+            startOffset="1392"
+            endLine="36"
+            endColumn="40"
+            endOffset="1423"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Did you know that images can speak?&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_home.xml"
+            line="49"
+            column="9"
+            startOffset="1903"
+            endLine="49"
+            endColumn="59"
+            endOffset="1953"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_launch_screen.xml"
+            line="38"
+            column="6"
+            startOffset="1537"
+            endLine="38"
+            endColumn="15"
+            endOffset="1546"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_login.xml"
+            line="21"
+            column="6"
+            startOffset="843"
+            endLine="21"
+            endColumn="14"
+            endOffset="851"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_login.xml"
+            line="37"
+            column="6"
+            startOffset="1484"
+            endLine="37"
+            endColumn="14"
+            endOffset="1492"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_main.xml"
+            line="17"
+            column="6"
+            startOffset="636"
+            endLine="17"
+            endColumn="15"
+            endOffset="645"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Classified as:&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_main.xml"
+            line="31"
+            column="9"
+            startOffset="1145"
+            endLine="31"
+            endColumn="38"
+            endOffset="1174"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Play&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_main.xml"
+            line="63"
+            column="9"
+            startOffset="2254"
+            endLine="63"
+            endColumn="28"
+            endOffset="2273"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Pause&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_main.xml"
+            line="73"
+            column="9"
+            startOffset="2606"
+            endLine="73"
+            endColumn="29"
+            endOffset="2626"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Take Picture&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_main.xml"
+            line="81"
+            column="9"
+            startOffset="2868"
+            endLine="81"
+            endColumn="36"
+            endOffset="2895"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Launch Gallery&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_main.xml"
+            line="92"
+            column="9"
+            startOffset="3237"
+            endLine="92"
+            endColumn="38"
+            endOffset="3266"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Logout&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_main.xml"
+            line="104"
+            column="9"
+            startOffset="3661"
+            endLine="104"
+            endColumn="30"
+            endOffset="3682"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Home&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_my_application.xml"
+            line="35"
+            column="25"
+            startOffset="1501"
+            endLine="35"
+            endColumn="44"
+            endOffset="1520"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Logout&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_my_application.xml"
+            line="45"
+            column="25"
+            startOffset="1982"
+            endLine="45"
+            endColumn="60"
+            endOffset="2017"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_my_application.xml"
+            line="80"
+            column="26"
+            startOffset="3355"
+            endLine="80"
+            endColumn="35"
+            endOffset="3364"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;User Name&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_my_application.xml"
+            line="93"
+            column="29"
+            startOffset="4031"
+            endLine="93"
+            endColumn="53"
+            endOffset="4055"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;user@example.com&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_my_application.xml"
+            line="104"
+            column="29"
+            startOffset="4597"
+            endLine="104"
+            endColumn="60"
+            endOffset="4628"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Object Detection&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_my_application.xml"
+            line="112"
+            column="29"
+            startOffset="5008"
+            endLine="112"
+            endColumn="60"
+            endOffset="5039"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_signup.xml"
+            line="21"
+            column="6"
+            startOffset="845"
+            endLine="21"
+            endColumn="14"
+            endOffset="853"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_signup.xml"
+            line="37"
+            column="6"
+            startOffset="1488"
+            endLine="37"
+            endColumn="14"
+            endOffset="1496"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_signup.xml"
+            line="53"
+            column="6"
+            startOffset="2133"
+            endLine="53"
+            endColumn="14"
+            endOffset="2141"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_splash.xml"
+            line="8"
+            column="6"
+            startOffset="338"
+            endLine="8"
+            endColumn="15"
+            endOffset="347"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_carousel.xml"
+            line="6"
+            column="6"
+            startOffset="204"
+            endLine="6"
+            endColumn="15"
+            endOffset="213"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_walkthrough.xml"
+            line="8"
+            column="6"
+            startOffset="327"
+            endLine="8"
+            endColumn="15"
+            endOffset="336"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Profile&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/nav_header_main.xml"
+            line="16"
+            column="9"
+            startOffset="588"
+            endLine="16"
+            endColumn="45"
+            endOffset="624"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Android Studio&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/nav_header_main.xml"
+            line="24"
+            column="9"
+            startOffset="877"
+            endLine="24"
+            endColumn="38"
+            endOffset="906"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;android.studio@android.com&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/nav_header_main.xml"
+            line="34"
+            column="9"
+            startOffset="1250"
+            endLine="34"
+            endColumn="50"
+            endOffset="1291"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Object Detection&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/menu/activity_main_drawer.xml"
+            line="10"
+            column="13"
+            startOffset="360"
+            endLine="10"
+            endColumn="45"
+            endOffset="392"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Account&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/menu/activity_main_drawer.xml"
+            line="13"
+            column="11"
+            startOffset="423"
+            endLine="13"
+            endColumn="34"
+            endOffset="446"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Logout&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/menu/activity_main_drawer.xml"
+            line="18"
+            column="17"
+            startOffset="598"
+            endLine="18"
+            endColumn="39"
+            endOffset="620"/>
+    </incident>
+
+    <incident
+        id="MonochromeLauncherIcon"
+        severity="warning"
+        message="The application adaptive icon is missing a monochrome tag">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26/ic_launcher.xml"
+            line="2"
+            column="1"
+            startOffset="40"
+            endLine="5"
+            endColumn="17"
+            endOffset="245"/>
+    </incident>
+
+    <incident
+        id="MonochromeLauncherIcon"
+        severity="warning"
+        message="The application adaptive roundIcon is missing a monochrome tag">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26/ic_launcher_round.xml"
+            line="2"
+            column="1"
+            startOffset="40"
+            endLine="5"
+            endColumn="17"
+            endOffset="245"/>
+    </incident>
+
+    <incident
+        id="ClickableViewAccessibility"
+        severity="warning"
+        message="`onTouch` lambda should call `View#performClick` when a click is detected">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/soundify/ui/main/MainFragment.kt"
+            line="173"
+            column="38"
+            startOffset="6434"
+            endLine="186"
+            endColumn="10"
+            endOffset="6917"/>
+    </incident>
+
+    <incident
+        id="ClickableViewAccessibility"
+        severity="warning"
+        message="Custom view ``ImageView`` has `setOnTouchListener` called on it but does not override `performClick`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/soundify/ui/main/MainFragment.kt"
+            line="173"
+            column="9"
+            startOffset="6405"
+            endLine="186"
+            endColumn="10"
+            endOffset="6917"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/soundify/ui/main/MainFragment.kt"
+            line="281"
+            column="43"
+            startOffset="10688"
+            endLine="281"
+            endColumn="65"
+            endOffset="10710"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/soundify/ui/main/MainFragment.kt"
+            line="281"
+            column="44"
+            startOffset="10689"
+            endLine="281"
+            endColumn="51"
+            endOffset="10696"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/soundify/ui/main/MainFragment.kt"
+            line="287"
+            column="40"
+            startOffset="10895"
+            endLine="287"
+            endColumn="67"
+            endOffset="10922"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/soundify/ui/myapplication/GalleryFragment.kt"
+            line="20"
+            column="26"
+            startOffset="623"
+            endLine="20"
+            endColumn="50"
+            endOffset="647"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/soundify/ui/myapplication/SlideshowFragment.kt"
+            line="20"
+            column="26"
+            startOffset="629"
+            endLine="20"
+            endColumn="52"
+            endOffset="655"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.16.0">
+        <fix-replace
+            description="Change to 1.16.0"
+            family="Update versions"
+            oldString="1.12.0"
+            replacement="1.16.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="41"
+            column="20"
+            startOffset="909"
+            endLine="41"
+            endColumn="51"
+            endOffset="940"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.0">
+        <fix-replace
+            description="Change to 1.7.0"
+            family="Update versions"
+            oldString="1.6.1"
+            replacement="1.7.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="42"
+            column="20"
+            startOffset="960"
+            endLine="42"
+            endColumn="56"
+            endOffset="996"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.material:material than 1.11.0 is available: 1.12.0">
+        <fix-replace
+            description="Change to 1.12.0"
+            family="Update versions"
+            oldString="1.11.0"
+            replacement="1.12.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="43"
+            column="20"
+            startOffset="1016"
+            endLine="43"
+            endColumn="65"
+            endOffset="1061"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1">
+        <fix-replace
+            description="Change to 2.2.1"
+            family="Update versions"
+            oldString="2.1.4"
+            replacement="2.2.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="44"
+            column="20"
+            startOffset="1081"
+            endLine="44"
+            endColumn="70"
+            endOffset="1131"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.navigation:navigation-fragment-ktx than 2.7.7 is available: 2.8.9">
+        <fix-replace
+            description="Change to 2.8.9"
+            family="Update versions"
+            oldString="2.7.7"
+            replacement="2.8.9"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="45"
+            column="20"
+            startOffset="1151"
+            endLine="45"
+            endColumn="71"
+            endOffset="1202"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.navigation:navigation-ui-ktx than 2.7.7 is available: 2.8.9">
+        <fix-replace
+            description="Change to 2.8.9"
+            family="Update versions"
+            oldString="2.7.7"
+            replacement="2.8.9"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="46"
+            column="20"
+            startOffset="1222"
+            endLine="46"
+            endColumn="65"
+            endOffset="1267"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.firebase:firebase-auth-ktx than 22.3.1 is available: 23.2.0">
+        <fix-replace
+            description="Change to 23.2.0"
+            family="Update versions"
+            oldString="22.3.1"
+            replacement="23.2.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="47"
+            column="20"
+            startOffset="1287"
+            endLine="47"
+            endColumn="66"
+            endOffset="1333"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.firebase:firebase-firestore-ktx than 24.10.1 is available: 25.1.4">
+        <fix-replace
+            description="Change to 25.1.4"
+            family="Update versions"
+            oldString="24.10.1"
+            replacement="25.1.4"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="48"
+            column="20"
+            startOffset="1353"
+            endLine="48"
+            endColumn="72"
+            endOffset="1405"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.firebase:firebase-storage-ktx than 20.3.0 is available: 21.0.1">
+        <fix-replace
+            description="Change to 21.0.1"
+            family="Update versions"
+            oldString="20.3.0"
+            replacement="21.0.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="49"
+            column="20"
+            startOffset="1425"
+            endLine="49"
+            endColumn="69"
+            endOffset="1474"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1">
+        <fix-replace
+            description="Change to 1.2.1"
+            family="Update versions"
+            oldString="1.1.5"
+            replacement="1.2.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="54"
+            column="31"
+            startOffset="1741"
+            endLine="54"
+            endColumn="62"
+            endOffset="1772"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1">
+        <fix-replace
+            description="Change to 3.6.1"
+            family="Update versions"
+            oldString="3.5.1"
+            replacement="3.6.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="55"
+            column="31"
+            startOffset="1803"
+            endLine="55"
+            endColumn="75"
+            endOffset="1847"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/soundify_logo.png` in densityless folder">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/soundify_logo.png"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/untitled_design_1.png` in densityless folder">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/untitled_design_1.png"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/views_images_ratio.png` in densityless folder">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/views_images_ratio.png"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.Soundify`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_home.xml"
+            line="6"
+            column="5"
+            startOffset="290"
+            endLine="6"
+            endColumn="38"
+            endOffset="323"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.Soundify`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_launch_screen.xml"
+            line="6"
+            column="5"
+            startOffset="295"
+            endLine="6"
+            endColumn="43"
+            endOffset="333"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.Soundify`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_login.xml"
+            line="6"
+            column="5"
+            startOffset="295"
+            endLine="6"
+            endColumn="43"
+            endOffset="333"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.Soundify`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_main.xml"
+            line="7"
+            column="5"
+            startOffset="312"
+            endLine="7"
+            endColumn="43"
+            endOffset="350"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/Theme.Soundify`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_signup.xml"
+            line="6"
+            column="5"
+            startOffset="295"
+            endLine="6"
+            endColumn="43"
+            endOffset="333"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.Soundify`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_splash.xml"
+            line="6"
+            column="5"
+            startOffset="295"
+            endLine="6"
+            endColumn="38"
+            endOffset="328"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/skyWhite` with a theme that also paints a background (inferred theme is `@style/Theme.Soundify`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_walkthrough.xml"
+            line="7"
+            column="5"
+            startOffset="347"
+            endLine="7"
+            endColumn="41"
+            endOffset="383"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/primaryBase` with a theme that also paints a background (inferred theme is `@style/Theme.Soundify`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/nav_header_main.xml"
+            line="6"
+            column="5"
+            startOffset="251"
+            endLine="6"
+            endColumn="44"
+            endOffset="290"/>
+    </incident>
+
+</incidents>

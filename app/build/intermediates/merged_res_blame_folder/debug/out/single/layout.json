@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "com.example.soundify.app-mergeDebugResources-51:/layout/item_walkthrough.xml",
+        "source": "com.example.soundify.app-main-54:/layout/item_walkthrough.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-mergeDebugResources-51:/layout/fragment_slideshow.xml",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_slideshow.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-mergeDebugResources-51:/layout/fragment_login.xml",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-mergeDebugResources-51:/layout/activity_main.xml",
+        "source": "com.example.soundify.app-main-54:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-mergeDebugResources-51:/layout/fragment_splash.xml",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_splash.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-mergeDebugResources-51:/layout/fragment_launch_screen.xml",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_launch_screen.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-mergeDebugResources-51:/layout/nav_header_main.xml",
+        "source": "com.example.soundify.app-main-54:/layout/nav_header_main.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-mergeDebugResources-51:/layout/fragment_my_application.xml",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_my_application.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-mergeDebugResources-51:/layout/fragment_gallery.xml",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_gallery.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-mergeDebugResources-51:/layout/fragment_main.xml",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_main.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-mergeDebugResources-51:/layout/fragment_walkthrough.xml",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_walkthrough.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-mergeDebugResources-51:/layout/item_carousel.xml",
+        "source": "com.example.soundify.app-main-54:/layout/item_carousel.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-mergeDebugResources-51:/layout/fragment_signup.xml",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_signup.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-mergeDebugResources-51:/layout/fragment_home.xml",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_home.xml"
+    }
+]

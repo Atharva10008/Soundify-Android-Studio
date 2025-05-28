@@ -1,0 +1,174 @@
+[
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_ic_menu_slideshow.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_tab_selector.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\tab_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_edit_text_background.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\edit_text_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_ic_logout.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\ic_logout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\layout_fragment_launch_screen.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_launch_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_untitled_design_1.png.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\untitled_design_1.png"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\layout_fragment_login.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\layout_fragment_walkthrough.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_walkthrough.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_indicator_active.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\indicator_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_ic_menu_gallery.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\ic_menu_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_ic_dot_inactive.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\ic_dot_inactive.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\layout_fragment_main.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_ic_dot_active.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\ic_dot_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_img_onboarding_placeholder.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\img_onboarding_placeholder.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_rounded_button.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\rounded_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_img_splash_placeholder.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\img_splash_placeholder.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_indicator_inactive.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\indicator_inactive.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\menu_activity_main_drawer.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\menu\\activity_main_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\layout_nav_header_main.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\layout_fragment_slideshow.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_slideshow.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_soundify_logo.png.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\soundify_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\layout_fragment_gallery.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\layout_item_walkthrough.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\item_walkthrough.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\xml_file_paths.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\xml\\file_paths.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_soundify_logo_vector.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\soundify_logo_vector.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\layout_fragment_my_application.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_my_application.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_ic_menu_camera.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\ic_menu_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_ic_image.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\ic_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\layout_fragment_splash.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/layout_fragment_my_application.xml.flat",
+        "source": "com.example.soundify.app-main-53:/layout/fragment_my_application.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\layout_fragment_signup.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_button_background_white.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\button_background_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\drawable_views_images_ratio.png.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\drawable\\views_images_ratio.png"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-merged_res-52:\\layout_item_carousel.xml.flat",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\item_carousel.xml"
+    }
+]

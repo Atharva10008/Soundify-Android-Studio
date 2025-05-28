@@ -1,0 +1,178 @@
+[
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_ic_logout.xml.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/ic_logout.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_ic_menu_camera.xml.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/ic_menu_camera.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/layout_fragment_signup.xml.flat",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_signup.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_ic_menu_slideshow.xml.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_img_onboarding_placeholder.xml.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/img_onboarding_placeholder.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/layout_fragment_slideshow.xml.flat",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_slideshow.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/layout_fragment_main.xml.flat",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_main.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_soundify_logo_vector.xml.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/soundify_logo_vector.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/layout_fragment_walkthrough.xml.flat",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_walkthrough.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_tab_selector.xml.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/tab_selector.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/xml_file_paths.xml.flat",
+        "source": "com.example.soundify.app-main-54:/xml/file_paths.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_ic_dot_active.xml.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/ic_dot_active.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.soundify.app-main-54:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_ic_dot_inactive.xml.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/ic_dot_inactive.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_untitled_design_1.png.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/untitled_design_1.png"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/layout_activity_main.xml.flat",
+        "source": "com.example.soundify.app-main-54:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/layout_fragment_gallery.xml.flat",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_gallery.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_views_images_ratio.png.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/views_images_ratio.png"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_indicator_active.xml.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/indicator_active.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_button_background_white.xml.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/button_background_white.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_rounded_button.xml.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/rounded_button.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_edit_text_background.xml.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/edit_text_background.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_img_splash_placeholder.xml.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/img_splash_placeholder.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_soundify_logo.png.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/soundify_logo.png"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/layout_fragment_home.xml.flat",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/layout_nav_header_main.xml.flat",
+        "source": "com.example.soundify.app-main-54:/layout/nav_header_main.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/menu_activity_main_drawer.xml.flat",
+        "source": "com.example.soundify.app-main-54:/menu/activity_main_drawer.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_indicator_inactive.xml.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/indicator_inactive.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_oip.jpg.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/oip.jpg"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/xml_backup_rules.xml.flat",
+        "source": "com.example.soundify.app-main-54:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.soundify.app-main-54:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/navigation_nav_graph.xml.flat",
+        "source": "com.example.soundify.app-main-54:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.soundify.app-main-54:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/layout_fragment_splash.xml.flat",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_splash.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/layout_fragment_launch_screen.xml.flat",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_launch_screen.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_oiz.jpg.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/oiz.jpg"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/layout_fragment_login.xml.flat",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/layout_fragment_my_application.xml.flat",
+        "source": "com.example.soundify.app-main-54:/layout/fragment_my_application.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_ic_menu_gallery.xml.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/ic_menu_gallery.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/layout_item_carousel.xml.flat",
+        "source": "com.example.soundify.app-main-54:/layout/item_carousel.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/layout_item_walkthrough.xml.flat",
+        "source": "com.example.soundify.app-main-54:/layout/item_walkthrough.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-merged_res-52:/drawable_ic_image.xml.flat",
+        "source": "com.example.soundify.app-main-54:/drawable/ic_image.xml"
+    }
+]

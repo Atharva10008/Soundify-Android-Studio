@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-mergeReleaseResources-51:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-mergeReleaseResources-51:\\layout\\fragment_launch_screen.xml",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_launch_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-mergeReleaseResources-51:\\layout\\fragment_slideshow.xml",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_slideshow.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-mergeReleaseResources-51:\\layout\\fragment_gallery.xml",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-mergeReleaseResources-51:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-mergeReleaseResources-51:\\layout\\fragment_splash.xml",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-mergeReleaseResources-51:\\layout\\nav_header_main.xml",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-mergeReleaseResources-51:\\layout\\item_carousel.xml",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\item_carousel.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-mergeReleaseResources-51:\\layout\\fragment_my_application.xml",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_my_application.xml"
+    },
+    {
+        "merged": "com.example.soundify.app-mergeReleaseResources-51:/layout/fragment_my_application.xml",
+        "source": "com.example.soundify.app-main-53:/layout/fragment_my_application.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-mergeReleaseResources-51:\\layout\\fragment_main.xml",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-mergeReleaseResources-51:\\layout\\fragment_login.xml",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-mergeReleaseResources-51:\\layout\\fragment_signup.xml",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-mergeReleaseResources-51:\\layout\\fragment_walkthrough.xml",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\fragment_walkthrough.xml"
+    },
+    {
+        "merged": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-mergeReleaseResources-51:\\layout\\item_walkthrough.xml",
+        "source": "C:\\Users\\ATHARVA\\.gradle\\daemon\\8.2\\com.example.soundify.app-main-53:\\layout\\item_walkthrough.xml"
+    }
+]
