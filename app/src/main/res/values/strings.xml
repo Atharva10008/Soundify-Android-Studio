@@ -27,13 +27,13 @@
     <string name="log_in">Log in</string>
 
     <!-- Firebase Configuration -->
-    <string name="firebase_web_api_key">AIzaSyC737eBKj7RmRZzxrCOTm2PAL6DIZcu40E</string>
-    <string name="firebase_project_id">soundify-9e177</string>
-    <string name="firebase_app_id">1:643897121011:android:f2471a38e68c83aefd3f86</string>
-    <string name="firebase_api_key">AIzaSyC737eBKj7RmRZzxrCOTm2PAL6DIZcu40E</string>
-    <string name="firebase_database_url">https://soundify-9e177.firebaseio.com</string>
-    <string name="firebase_storage_bucket">soundify-9e177.appspot.com</string>
-    <string name="firebase_sender_id">643897121011</string>
+    <string name="firebase_web_api_key">firebase_web_api_key</string>
+    <string name="firebase_project_id">firebase_project_id</string>
+    <string name="firebase_app_id">your_firebase_app_id</string>
+    <string name="firebase_api_key">your_firebase_api_key</string>
+    <string name="firebase_database_url">firebase_database_url</string>
+    <string name="firebase_storage_bucket">firebase_storage_bucket</string>
+    <string name="firebase_sender_id">firebase_sender_id</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
